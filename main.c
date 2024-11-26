@@ -1,19 +1,28 @@
 #include "vigenere.h"
+
 #include <stdio.h>
+#include <stdlib.h>
 
 int main(void) {
-  char p[] = "MYSTERY";
-  char k[] = "KEYKEY";
+  printf("Enter Plain Text: ");
+  char *p = getstr(255);
 
-  char *c = tocipher(p, k);
-  int ci = 0;
+  printf("Enter Key: ");
+  char *k = getstr(255);
+
+  char *c = encrypt(p, k);
 
   printf("Cipher Text: ");
-  while (c[ci] != '\0') {
-    printf("%c", c[ci]);
-    ++ci;
-  }
-  printf("\n");
+  printf("%s\n", c);
+
+  p = decrypt(c, k);
+
+  printf("Plain Text: ");
+  printf("%s\n", c);
+
+  free(c);
+  free(p);
+  free(k);
 
   return 0;
 }
