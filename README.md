@@ -1,3 +1,3 @@
 # Vigenere Ciphere
 
-A small c program for encrypting or decrypting message using vigenre ciphere.
+A small C program for encrypting or decrypting message using Vigenre cipher technique.
