@@ -1,2 +1,2 @@
 all:
-	gcc main.c vigenere.c -o vigenere
+	gcc main.c encryption.c decryption.c menu.c textutils.c -o vigenere

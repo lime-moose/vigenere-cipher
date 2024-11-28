@@ -1,3 +1,3 @@
 # Vigenere Ciphere
 
-To be Complete.
+A small c program for encrypting or decrypting message using vigenre ciphere.
